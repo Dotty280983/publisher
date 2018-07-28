@@ -3,10 +3,16 @@
   "dependencies": {
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.4",
-    "js-yaml": "^3.4.3"
+    "js-yaml": "^3.4.3",
+    "snyk": "^1.83.0"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/github/publisher.git"
-  }
+    "type": "git",
+    "url": "https://github.com/github/publisher.git"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }

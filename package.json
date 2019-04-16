@@ -1,10 +1,10 @@
 {
   "description": "Publisher",
   "dependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.0",
     "gulp-sass": "^2.0.4",
     "js-yaml": "^3.4.3",
-    "snyk": "^1.83.0"
+    "snyk": "^1.151.0"
   },
   "repository": {
     "type": "git",
@@ -12,7 +12,8 @@
   },
   "scripts": {
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "prepublish": "npm run snyk-protect"
   },
   "snyk": true
 }
